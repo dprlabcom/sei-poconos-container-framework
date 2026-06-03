@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DPRLAB_SEI_Poconos_Structural_Manifest",
+  "description": "Public Repository Demo: Structural indexing and spatial vector nodes for the five-unit elevated container array featuring a multi-axis cantilever configuration.",
+  "metadata": {
+    "framework": "Synthetic Environment Infrastructure (SEI)",
+    "pipeline_compatibility": "Hybrid AI Workflows",
+    "project_id": "PRJ-003-POCONOS-DEMO",
+    "status": "PRODUCTION-VERIFIED"
+  },
+  "structural_geometry": {
+    "foundation_layer": {
+      "type": "poured_concrete_monolithic_mass",
+      "elevation_offset_m": 0.0,
+      "retaining_walls": {
+        "geometry": "dual_tiered_perimeter",
+        "finish_profile": "matte_sand_toned_concrete"
+      },
+      "structural_supports": {
+        "type": "charcoal_steel_column_array",
+        "footing_count": 6,
+        "load_bearing_capacity": "verified_industry_standard"
+      }
+    },
+    "container_modules": {
+      "total_units": 5,
+      "specification": "40ft_high_cube_iso",
+      "exterior_cladding": "warm_taupe_metal_corrugated",
+      "soffits": "natural_cedar_wood_plank"
+    },
+    "spatial_assemblies": {
+      "lower_volume_anchor": {
+        "unit_count": 3,
+        "orientation_deg": 0.0,
+        "aperture_profile": {
+          "front_facing": "panoramic_structural_glazing",
+          "frame_finish": "brushed_bronze"
+        }
+      },
+      "upper_cantilever_array": {
+        "unit_count": 2,
+        "orientation_deg": 90.0,
+        "cantilever_overhang_m": 4.5,
+        "aperture_profile": {
+          "terminal_ends": "full_profile_panoramic_windows",
+          "balcony_state": "suppressed_null"
+        }
+      }
+    }
+  }
+}
